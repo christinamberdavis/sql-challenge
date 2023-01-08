@@ -12,8 +12,8 @@ CREATE TABLE employees (
 emp_no SERIAL PRIMARY KEY NOT NULL,
 emp_title_id VARCHAR(10) NOT NULL,
 birth_date DATE NOT NULL, 
-first_name VARCHAR NOT NULL, 
-last_name VARCHAR NOT NULL, 
+first_name VARCHAR(100) NOT NULL, 
+last_name VARCHAR(100) NOT NULL, 
 sex VARCHAR(1) NOT NULL,
 hire_date DATE NOT NULL, 
 FOREIGN KEY (emp_title_id) REFERENCES titles(title_id)
